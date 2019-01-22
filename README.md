@@ -1,5 +1,7 @@
 # CoinMaster
 一个区块链相关的综合类App
+数据源为三方接口和爬虫
+整体架构为MvpArms
 
 # 效果图
 <img src="img_folder/img_1.jpg"/>
