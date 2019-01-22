@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/ll_rcv_loadmore_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:background="@android:color/white"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:id="@+id/fl_rcv_loadmore_status"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="8dp">
+
+        <ProgressBar
+            android:id="@+id/pgb_rcv_loadmore_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:id="@+id/img_rcv_loadmore_status"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="3dp"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_rcv_loadmore_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        tools:text="加载中。。。"
+        android:textColor="#999999"
+        android:textSize="14sp"/>
+
+</LinearLayout>

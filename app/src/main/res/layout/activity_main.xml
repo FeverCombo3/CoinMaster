@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.yjq.coinmaster.widget.NoScrollViewPager
+            android:id="@+id/vp_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+    <com.chaychan.library.BottomBarLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <com.chaychan.library.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:iconNormal="@mipmap/tab_quote_normal"
+            app:iconSelected="@mipmap/tab_quote_press"
+            app:itemMarginTop="1dp"
+            app:itemText="行情"
+            app:itemTextSize="10sp"
+            app:openTouchBg="true"
+            app:textColorNormal="@color/A4"
+            app:textColorSelected="@color/A1"
+            app:touchDrawable="@drawable/selector_bottom_tab" />
+
+        <com.chaychan.library.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:iconNormal="@mipmap/tab_news_normal"
+            app:iconSelected="@mipmap/tab_news_press"
+            app:itemMarginTop="1dp"
+            app:itemText="资讯"
+            app:itemTextSize="10sp"
+            app:openTouchBg="true"
+            app:textColorNormal="@color/A4"
+            app:textColorSelected="@color/A1"
+            app:touchDrawable="@drawable/selector_bottom_tab" />
+
+        <com.chaychan.library.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:iconNormal="@mipmap/tab_forum_normal"
+            app:iconSelected="@mipmap/tab_forum_press"
+            app:itemMarginTop="1dp"
+            app:itemText="论坛"
+            app:itemTextSize="10sp"
+            app:openTouchBg="true"
+            app:textColorNormal="@color/A4"
+            app:textColorSelected="@color/A1"
+            app:touchDrawable="@drawable/selector_bottom_tab" />
+
+        <com.chaychan.library.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:iconNormal="@mipmap/tab_mine_normal"
+            app:iconSelected="@mipmap/tab_mine_press"
+            app:itemMarginTop="1dp"
+            app:itemText="我的"
+            app:itemTextSize="10sp"
+            app:openTouchBg="true"
+            app:textColorNormal="@color/A4"
+            app:textColorSelected="@color/A1"
+            app:touchDrawable="@drawable/selector_bottom_tab" />
+
+    </com.chaychan.library.BottomBarLayout>
+
+</LinearLayout>

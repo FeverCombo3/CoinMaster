@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dark_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="14dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/tv_now_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/kline_green"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:text="4.7454" />
+
+        <TextView
+            android:id="@+id/tv_price_rmb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_now_price"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/kline_blue"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_now_price"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/tv_price_rmb"
+            android:textColor="@color/kline_green"
+            android:textSize="16sp"
+            tools:text="+7.81%" />
+
+
+        <TextView
+            android:id="@+id/tv_high_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/color_white"
+            android:textSize="14sp"
+            tools:text="4.8500" />
+
+        <TextView
+            android:id="@+id/tv_high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/tv_high_price"
+            android:text="高"
+            android:textColor="@color/kline_blue"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_low_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_high_price"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/color_white"
+            android:textSize="14sp"
+            tools:text="4.8500" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_high"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="6dp"
+            android:layout_toLeftOf="@+id/tv_low_price"
+            android:text="低"
+            android:textColor="@color/kline_blue"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_24h_vol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_low_price"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/color_white"
+            android:textSize="14sp"
+            tools:text="21793940" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_low_price"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="6dp"
+            android:layout_toLeftOf="@+id/tv_24h_vol"
+            android:text="24H量"
+            android:textColor="@color/kline_blue"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <!--<com.yjq.hotcoin.view.KlineToolBar-->
+        <!--android:id="@+id/kline_toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"/>-->
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">@android:color/white</color>
+    <color name="black">@android:color/black</color>
+    <color name="transparent">#00000000</color>
+
+    <!--半透明颜色层-->
+    <color name="color_Set_Alpah_bg">#00000000</color>
+    <!--分割线颜色-->
+    <color name="color_Driver">#22000000</color>
+    <!--分割线颜色-->
+    <color name="color_Line">#44c4c2c2</color>
+    <!--按钮文字颜色-->
+    <color name="color_Button_text">#ffffff</color>
+    <!--按钮正常颜色-->
+    <color name="color_Button_bg_Normal">#2291e1</color>
+    <!--按钮按下选中颜色-->
+    <color name="color_Button_bg_Select">#8f8e8e</color>
+    <!--主题文字辅助色-->
+    <color name="color_Hint_Word">#333333</color>
+</resources>

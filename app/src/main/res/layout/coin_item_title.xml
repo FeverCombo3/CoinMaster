@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    tools:ignore="ResourceName">
+
+    <LinearLayout
+        android:id="@+id/textView_1"
+        android:layout_width="103dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables">
+
+        <TextView
+            android:layout_width="77dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingEnd="0dp"
+            android:paddingStart="0dp"
+            android:text="币种"
+            android:textColor="#ff666666"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <com.yjq.coinmaster.widget.HScrollView
+        android:id="@+id/hscrollview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/textView_1"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="86dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center_vertical"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
+
+                <LinearLayout
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="17dp"
+                        android:text="价格/涨跌"
+                        android:textColor="#ff666666"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rate"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="12dp"
+                android:gravity="center"
+                tools:ignore="UseCompoundDrawables">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="17dp"
+                    android:text="涨幅"
+                    android:textColor="#ff666666"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/amount"
+                android:layout_width="81dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|end"
+                tools:ignore="UseCompoundDrawables">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|end"
+                    android:text="24H成交额"
+                    android:textColor="#ff666666"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/inflow"
+                android:layout_width="88dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="12dp"
+                android:gravity="center_vertical|end"
+                tools:ignore="UseCompoundDrawables">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|end"
+                    android:text="流通市值"
+                    android:textColor="#ff666666"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </com.yjq.coinmaster.widget.HScrollView>
+
+</RelativeLayout>

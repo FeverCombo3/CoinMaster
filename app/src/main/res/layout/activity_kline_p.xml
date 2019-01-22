@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/kline_top"
+        layout="@layout/layout_kline_toolbar" />
+
+    <com.kline.library.view.KlineView
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/kline_top"
+        android:id="@+id/klineView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_bg"
+        app:border_line_width="1"
+        app:first_weight="4"
+        app:third_weight = "1"
+        app:second_weight="1" />
+
+    <com.yjq.coinmaster.util.KlineToolBar
+        android:layout_below="@+id/kline_top"
+        android:id="@+id/kline_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.yjq.coinmaster.util.KlineToolBar>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/kline_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        app:indicatorName="BallSpinFadeLoaderIndicator" />
+
+</RelativeLayout>

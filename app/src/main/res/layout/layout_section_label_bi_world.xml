@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:id="@+id/tv_section_label_bi_world"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="#F3F6FB"
+    android:gravity="center_vertical|left"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:textColor="#999999"
+    tools:text="今天 10月18日 星期四"
+    android:textSize="12sp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+</TextView>

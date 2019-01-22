@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    tools:ignore="ResourceName">
+
+    <LinearLayout
+        android:id="@+id/textView_1"
+        android:layout_width="114dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="12dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/position"
+                android:layout_width="match_parent"
+                android:layout_height="13dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:textColor="#ff999999"
+                android:textSize="9sp"
+                tools:ignore="SmallSp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="6dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/name_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:textColor="#ff333333"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/name_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:gravity="bottom"
+                    android:textColor="#ff999999"
+                    android:textSize="9sp"
+                    tools:ignore="SmallSp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/market"
+                android:layout_width="match_parent"
+                android:layout_height="17dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center_vertical"
+                android:textColor="#ff666666"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.yjq.coinmaster.widget.HScrollView
+        android:id="@+id/hscrollview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/textView_1"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/inner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="93dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:gravity="end|center_vertical"
+                    android:text="--"
+                    android:textColor="#ff333333"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/price_"
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="2dp"
+                    android:gravity="end|center_vertical"
+                    android:text="--"
+                    android:textColor="#ff666666"
+                    android:textSize="10sp"
+                    tools:ignore="SmallSp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/rate"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="12dp"
+                android:gravity="center"
+                android:text="--"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/change"
+                android:layout_width="106dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|end"
+                android:text="--"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="81dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|end"
+                android:text="--"
+                android:textColor="#ff333333"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/inflow"
+                android:layout_width="89dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="12dp"
+                android:gravity="center_vertical|end"
+                android:text="--"
+                android:textColor="#ff333333"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </com.yjq.coinmaster.widget.HScrollView>
+</RelativeLayout>

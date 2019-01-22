@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="dark_bg">#131F2F</color>
+    <color name="dark_bg_line">#1E2E41</color>
+
+    <color name="kline_green">#15BF89</color>
+    <color name="kline_blue">#647C9A</color>
+    <color name="kline_blue_darker">#2A3060</color>
+    <color name="kline_blue_darker_alpha">#7F2A3060</color>
+    <color name="kline_blue_choose">#5785CE</color>
+    <color name="kline_yellow">#F1D896</color>
+    <color name="kline_qing">#5FC8BA</color>
+    <color name="kline_purple">#C18DF0</color>
+    <color name="kline_red">#E66E48</color>
+
+    <color name="color_black">#000000</color>
+    <color name="color_white">#ffffff</color>
+    <color name="color_alpha_black">#CC000000</color>
+
+
+    <color name="color_4077E6_fenshi_now">#4077E6</color>
+    <color name="color_FF9320_orange">#FF9320</color>
+    <color name="color_F562C4_fenshi_pink">#F562C4</color>
+    <color name="secondline">#FFB43E</color>
+    <color name="thirdline">#67B3FF</color>
+    <color name="color_E6E6E6_one_px_divider">#E6E6E6</color>//1px分割线#E6E6E6
+    <color name="color_467DEB_fenshi_light_blue">#467DEB</color>
+    <color name="color_7A7A7A_second_important_text_2">#7A7A7A</color>
+
+</resources>
+

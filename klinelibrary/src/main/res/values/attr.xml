@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="KlineView">
+        <attr name="back_ground"  format="color"/>
+        <attr name="first_weight"  format="float"/>
+        <attr name="second_weight" format="float" />
+        <attr name="third_weight"  format="float"/>
+        <attr name="border_color"  format="color"/>
+        <attr name="border_line_width" format="integer"/>
+        <attr name="padding_right" format="float"/>
+        <attr name="rect1_content_padding_t" format="dimension"/>
+        <attr name="rect1_content_padding_b" format="dimension"/>
+        <attr name="rect2_content_padding_t" format="dimension"/>
+        <attr name="rect2_content_padding_b" format="dimension"/>
+        <attr name="rect_t_padding" format="dimension"/>
+    </declare-styleable>
+</resources>

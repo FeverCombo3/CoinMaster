@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <array name="ma_color">
+        <item>@color/color_4077E6_fenshi_now</item>
+        <item>@color/color_FF9320_orange</item>
+        <item>@color/color_F562C4_fenshi_pink</item>
+        <item>@color/color_F562C4_fenshi_pink</item>
+        <item>@color/secondline</item>
+        <item>@color/thirdline</item>
+    </array>
+
+</resources>
